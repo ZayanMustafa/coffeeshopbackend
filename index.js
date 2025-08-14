@@ -22,7 +22,7 @@ app.use(express.json());
 
 
 // MongoDB Connection
-mongoose.connect("mongodb+srv://user:0311-251282-1z@cluster0.ua7cqic.mongodb.net/" || 'mongodb://localhost:27017/coffeeapp', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/coffeeapp', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })

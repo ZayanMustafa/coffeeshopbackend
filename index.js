@@ -6,6 +6,9 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import chalk from 'chalk';
 import reservationRequestRouter from './routes/reservationRequestRouter.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;

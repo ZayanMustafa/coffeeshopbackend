@@ -50,7 +50,7 @@
 
 
 
-a
+
     // Error Handler
     app.use((err, req, res, next) => {
         console.error(chalk.red('🚨 Server error:', err));
